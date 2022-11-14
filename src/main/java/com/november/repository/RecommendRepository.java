@@ -1,7 +1,6 @@
-package comm.november.repository;
+package com.november.repository;
 
-import comm.november.domain.Recommend;
-import lombok.RequiredArgsConstructor;
+import com.november.domain.Recommend;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,0 +1,47 @@
+
+server:
+  port: 8011
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+    database: MYSQL
+
+  main:
+    allow-bean-definition-overriding: true
+  devtools:
+    restart:
+      enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://database.cz9vbpewhc3f.ap-northeast-2.rds.amazonaws.com/database?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+    username: root
+    password: 12341234
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: boardgame
+    web:
+      pageable:
+        max-page-size: 100
+        default-page-size: 100
+
+  redis:
+    #    host: redis-10134.c54.ap-northeast-1-2.ec2.cloud.redislabs.com
+    #    port: 10134
+    #    password: pEJwjN5eCh1BfvVOWhrEO08NC97464ju
+    host: localhost
+    port: 6379
+
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
+    api-docs:
+      path: /users/api-docs
+    url: http://localhost:8011

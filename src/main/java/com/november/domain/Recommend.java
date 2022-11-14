@@ -1,4 +1,4 @@
-package comm.november.domain;
+package com.november.domain;
 
 import lombok.*;
 

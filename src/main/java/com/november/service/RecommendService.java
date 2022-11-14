@@ -1,6 +1,6 @@
-package comm.november.service;
+package com.november.service;
 
-import comm.november.repository.RecommendRepository;
+import com.november.repository.RecommendRepository;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

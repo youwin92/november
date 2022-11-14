@@ -1,6 +1,6 @@
-package comm.november.api;
+package com.november.api;
 
-import comm.november.service.RecommendService;
+import com.november.service.RecommendService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
